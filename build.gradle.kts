@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.4.21"
     application
+    id("com.github.johnrengelman.shadow") version "6.1.0"
     id("com.google.cloud.tools.jib") version "2.7.0"
 
 }
@@ -8,13 +9,11 @@ plugins {
 group = "fr.fteychene.teaching.cloud.failer"
 version = "1.0-SNAPSHOT"
 
+project.setProperty("mainClassName", "fr.fteychene.teaching.cloud.failer.MainKt")
+
 repositories {
     mavenCentral()
     jcenter()
-}
-
-application {
-    mainClass.set("fr.fteychene.teaching.cloud.failer.MainKt")
 }
 
 dependencies {
