@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            Cloud failer
+        </h1>
+        <p class="subtitle">
+            The app that <strong>fail</strong> !
+        </p>
+
+        <div class="block">
+            The app should fail randomly between 30 and 300 secs after it started. Be quick or be dead 😉
+        </div>
+
+        <form action="/fail" method="post">
+            <div class="field is-grouped">
+                <p class="control">
+                    <input type="submit" value="Fail" class="button is-danger"/>
+                </p>
+                <p class="control">
+                    <a href="/health" class="button is-link">Health</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</section>
+</body>
+</html>
