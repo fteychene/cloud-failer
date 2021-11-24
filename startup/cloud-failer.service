@@ -1,0 +1,13 @@
+[Unit]
+Description=Cloud failer fteychene
+After=network-online.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/java -jar /home/fteychene/Downloads/cloud-failer-0.1.0.jar
+
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
